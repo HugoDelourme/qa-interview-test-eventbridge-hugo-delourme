@@ -18,5 +18,10 @@
     "strict": true
   },
   "exclude": ["node_modules"],
-  "include": ["**/*.ts"]
+  "include": ["**/*.ts"],
+  "typeRoots": ["./typings", "./node_modules/@types/"],
+  "allowSyntheticDefaultImports": true,
+  "resolveJsonModule": true,
+  "requireModule": ["ts-node/register"],
+  "require": ["step-definitions/**/*.ts"]
 }
